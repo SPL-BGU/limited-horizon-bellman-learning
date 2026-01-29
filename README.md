@@ -25,10 +25,10 @@ There are pre-computed results of A* search in the `results/` directory.
 
 ### Commands to train LHBL to solve the 15-puzzle
 
-###### Train cost-to-go function (LHBL(10) - Limited-Horizon Bellman Learning with horizon=50)
+###### Train cost-to-go function - LHBL(50) (Limited-Horizon Bellman Learning with horizon=50)
 `python ctg_approx/avi.py --env puzzle15 --states_per_update 50000000 --batch_size 10000 --nnet_name puzzle15 --max_itrs 1000000 --loss_thresh 0.1 --back_max 500 --num_update_procs 30 --max_update_steps 50 --update_method ASTAR --limited_horizon_update`
 
-###### Train cost-to-go function (SSBL)
+###### Train cost-to-go function - SSBL
 `python ctg_approx/avi.py --env puzzle15 --states_per_update 50000000 --batch_size 10000 --nnet_name puzzle15 --max_itrs 1000000 --loss_thresh 0.1 --back_max 500 --num_update_procs 30`
 
 The key additional flags for LHBL are:
