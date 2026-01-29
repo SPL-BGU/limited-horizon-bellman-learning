@@ -1,5 +1,5 @@
 # Limited-Horizon Bellman Learning (LHBL)
-This is the code for [LHBL](https://arxiv.org/abs/2511.10264) for python3 and PyTorch.
+This is the code for the AAAI 2026 published paper "Beyond Single-Step Updates: Reinforcement Learning of Heuristics with Limited-Horizon Search" [LHBL](https://arxiv.org/abs/2511.10264).
 
 This currently contains the code for using LHBL and DeepCubeA to solve the Rubik's cube, 15-puzzle, 24-puzzle, 35-puzzle, 48-puzzle, and Lights Out.
 
