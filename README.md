@@ -49,6 +49,24 @@ During A* search, increasing the weight on the path cost (`--weight`, range shou
 
 These improvements often come at the expense of time.
 
+# Reproducing Results
+
+To reproduce the paper results, use the provided `train.sh` and `test.sh` scripts. It has exmaple on how to run SSBL and LHBL(50), using different horizons is possible and explained in `train.sh`.
+
+### Training
+```bash
+bash train.sh
+```
+
+The script contains training commands for all environments (Rubik's Cube, 35-Puzzle, Lights Out) with both SSBL and LHBL methods. Edit the script to uncomment the specific experiment you want to run.
+
+### Testing
+```bash
+bash test.sh
+```
+
+The script runs A* search using trained models on test instances for all environments. Adjust the variables at the top of the script (`start_idx`, `end_idx`, `solution_time_cap`) as needed.
+
 # Parallelism
 Training and solving can be easily parallelized across multiple CPUs and GPUs.
 
